@@ -1,0 +1,10 @@
+parameters:
+  geo_objects.host: 127.0.0.1
+
+services:
+#    world_geo_objects.example:
+#        class: World\GeoObjectsBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]
+  world.geo.objects:
+    class: World\GeoObjectsBundle\GeoObjects\GeoObjects
+    arguments: ['@service_container']
