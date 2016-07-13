@@ -19,8 +19,8 @@ Add the AnchovyCURLBundle, WorldGeoObjectsBundle to your application's kernel:
         );
 
 Define parameter "geo_objects.host" in configuration:
-parameters:
-  geo_objects.host: <link to page for retreiving json data>
+    parameters:
+      geo_objects.host: <link to page for retreiving json data>
 
 
 ## Usage ##
