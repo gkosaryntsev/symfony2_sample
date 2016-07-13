@@ -19,6 +19,7 @@ Add the AnchovyCURLBundle, WorldGeoObjectsBundle to your application's kernel:
         );
 
 Define parameter "geo_objects.host" in configuration:
+
     parameters:
       geo_objects.host: <link to page for retreiving json data>
 
@@ -28,8 +29,12 @@ Define parameter "geo_objects.host" in configuration:
 	// Simple call:
 
 	    public function indexAction() {
-            $objects = $this->get('world.geo.objects')->getList();
+            $objects = $this->get('world.geo.objects')->getLocations();
 		}
+
+## Testing ##
+
+    phpunit -c app src/World/GeoObjectsBundle/
 
 ## Author ##
 

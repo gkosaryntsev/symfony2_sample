@@ -13,7 +13,7 @@ class DefaultController extends Controller
      */
     public function indexAction(Request $request)
     {
-        $v = $this->get('world.geo.objects')->getList();
+        $v = $this->get('world.geo.objects')->getLocations();
 
         // replace this example code with whatever you need
         return $this->render('default/index.html.twig', array(
